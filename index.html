@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digvijay Kumar | Full Stack Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container nav-wrapper">
+        <div class="logo">Digvijay</div>
+
+        <nav class="nav" id="nav">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="assests/resume/DIGVIJAY_KUMAR_RESUME.pdf" target="_blank" class="nav-resume">Resume</a>
+        </nav>
+
+        <div class="controls">
+            <button id="theme-toggle">🌙</button>
+            <div class="hamburger" id="hamburger">☰</div>
+        </div>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="container hero-content">
+        <h1>Hi, I'm <span>Digvijay Kumar</span></h1>
+        <h2><span id="typing"></span></h2>
+        <p>Full Stack Developer | MERN & Django</p>
+
+    
+
+        <div class="buttons">
+    <a href="#projects" class="btn primary">View Projects</a>
+    <a href="#contact" class="btn secondary">Hire Me</a>
+
+    <!-- Resume Buttons -->
+    <a href="assests/resume/Digvijay_Kumar_Resume.pdf"
+       target="_blank"
+       class="btn resume">
+       View Resume
+    </a>
+
+    <a href="assets/resume/Digvijay_Kumar_Resume.pdf"
+       download
+       class="btn download">
+       Download CV
+    </a>
+</div>
+
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="grid">
+            <div class="card" onclick="openModal('Hotel Management', 'Django system for booking and management with admin dashboard.')">
+                <h3>Hotel Management</h3>
+                <p>Click to view details</p>
+            </div>
+
+            <div class="card" onclick="openModal('E-commerce App', 'Full seller & customer system with payment integration.')">
+                <h3>E-commerce App</h3>
+                <p>Click to view details</p>
+            </div>
+
+            <div class="card" onclick="openModal('Video Platform', 'MERN app with authentication, like, comment & admin control.')">
+                <h3>Video Platform</h3>
+                <p>Click to view details</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <p class="about-text">
+            Passionate Full Stack Developer building scalable web applications.
+            Currently looking for an entry-level Software Developer role.
+        </p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+
+        <form class="contact-form" id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button class="btn primary">Send Message</button>
+            <p class="success-msg" id="success-msg"></p>
+        </form>
+    </div>
+</section>
+
+<!-- PROJECT MODAL -->
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">×</span>
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Digvijay Kumar | All Rights Reserved</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
